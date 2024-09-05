@@ -1,0 +1,169 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #080808;
+    color: #fff;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #111111;
+    position: relative;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    background-color: #333030;
+    border-radius: 20px;
+    padding: 5px 10px;
+}
+
+.search input {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    padding: 5px;
+    outline: none;
+}
+
+.search button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.login-button {
+    background-color: #ff3b5c;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #1c1c1c;
+    padding: 20px;
+    position: fixed;
+    top: 64px;
+    left: 0;
+    height: calc(100% - 64px);
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-item {
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 20px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-item.active {
+    color: #ff3b5c;
+}
+
+.nav-item:hover {
+    color: #ff3b5c;
+}
+
+.new-badge {
+    background-color: #ff3b5c;
+    color: #fff;
+    border-radius: 5px;
+    padding: 2px 5px;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.session-info {
+    margin-top: auto;
+    padding-top: 20px;
+    border-top: 1px solid #000000;
+}
+
+.session-info p {
+    margin: 10px 0;
+    font-size: 14px;
+    color: #aaa;
+}
+
+.session-info .login-button {
+    margin-top: 10px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 64px;
+}
+
+/* Contenedor de los videos */
+#video-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px; /* Espacio entre los videos */
+}
+
+/* contenedor individual de video y sus íconos */
+.video-wrapper {
+    position: relative;
+    width: 340px; /* Ancho de los videos */
+    height: 600px; /* Altura de los videos */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000;
+    margin-bottom: 40px; /* Espacio entre videos */
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Íconos flotantes */
+.icons {
+    position: absolute;
+    right: -70px;
+    top: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.icons img {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+
+/* Título del video (opcional) */
+h2 {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+

@@ -1,0 +1,7 @@
+{
+    "type": "pwa-msedge",
+    "request": "launch",
+    "name": "Launch Edge",
+    "url": "file:///C:/Users/naick/OneDrive/Escritorio/Replica%20pagina%20web/index.html",  // Asegúrate de que este sea tu puerto
+    "webRoot": "${workspaceFolder}"
+}
